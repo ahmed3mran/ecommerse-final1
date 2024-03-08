@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3mran</title>
+    <!-------------- css ---------------->
+    <link rel="stylesheet" href="style.css" />
+    <!-------------- fonts ---------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="Screenshot_2024-02-15_235633-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-------------- boxicons ---------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-------------- fontawesome ---------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-------------- remixicons ---------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!------------- Header -------------->
+    <header>
+      <div class="container">
+        <img
+          class="logo"
+          src="Screenshot_2024-02-15_235633-removebg-preview.png  "
+          alt=""
+        />
+        <nav class="nav-bar">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <div id="link">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+          </div>
+          <li><a href="#contact">Contact Us</a></li>
+        </nav>
+        <div class="nav-icon">
+          <li><a href="#" id="user"></a></li>
+          <div class="nav-icon-shop">
+            <i id="btn-shop" class="fa-solid fa-cart-shopping shop"></i>
+            <span id="spn-icon-shop">0</span>
+          </div>
+          <i id="btn-show" class="bx bx-menu menu"></i>
+        </div>
+      </div>
+      <!----------------------- Shop page ------------------------->
+      <div class="shop-page container">
+        <div id="show-shop" class="container">
+          <div class="shop-content">
+            <span id="btn-shop-hide">X</span>
+            <p>You have no items in your shopping cart.</p>
+          </div>
+        </div>
+      </div>
+      <ul id="toggle">
+        <i id="btn-hide" class="ri-close-fill close"></i>
+        <li><a href="#">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <div class="link">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </div>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </header>
+    <!---------------- Home ----------------->
+    <section id="home">
+      <div class="container">
+        <div class="home-content">
+          <img src="mac-laptop-png-13.png" alt="" />
+          <div class="home-text">
+            <h3>
+              Welcome to <span>3mran</span> store to sell all computers and
+              accessories
+            </h3>
+            <p>To search for a specific product from here</p>
+            <i class="bx bx-down-arrow-alt"></i>
+          </div>
+          <div class="home-search">
+            <input type="text" placeholder="search.." />
+            <i class="bx bx-search"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cart-page" id="cart-page">
+      <div class="content-cart-page">
+        <i id="btn-cart-page" class="fa-solid fa-circle-xmark"></i>
+        <div class="left-content">
+          <div class="head">
+            <h1>Shopping Cart</h1>
+            <span>3 items</span>
+          </div>
+          <div class="content">
+            <div class="item">
+              <img src="mac-laptop-png-13.png" />
+              <div class="result">
+                <h4>Laptop</h4>
+                <span>HP Victus</span>
+              </div>
+              <span class="price">810$</span>
+            </div>
+          </div>
+          <div class="content">
+            <div class="item">
+              <img src="mac-laptop-png-13.png" />
+              <div class="result">
+                <h4>Laptop</h4>
+                <span>HP Victus</span>
+              </div>
+              <span class="price">810$</span>
+            </div>
+          </div>
+          <div class="content">
+            <div class="item item3">
+              <img src="mac-laptop-png-13.png" />
+              <div class="result">
+                <h4>Laptop</h4>
+                <span>HP Victus</span>
+              </div>
+              <span class="price">810$</span>
+            </div>
+          </div>
+          <span></span>
+          <a id="back" class="back" href="#shop"
+            ><i class="fa-solid fa-arrow-left"></i>Back to shop</a
+          >
+        </div>
+        <div class="rghit-content">
+          <h1>Summary</h1>
+          <div class="content">
+            <div class="item">
+              <h3>item 3</h3>
+              <span>120$</span>
+            </div>
+            <div class="shopping">
+              <h1>Shipping</h1>
+              <select name="" id="">
+                <option value="1">Standard-Delivery-3.00$</option>
+                <option value="2">advanced-Delivery-5.00$</option>
+                <option value="3">quick-Delivery-8.00$</option>
+              </select>
+            </div>
+            <h2>GIVE CODE</h2>
+            <input type="text" placeholder="Enter your code" />
+            <div class="total-price">
+              <h1>TOTAL PRICE</h1>
+              <span>200$</span>
+            </div>
+            <button id="btn-register" type="submit">REGISTER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------- Shop ----------------->
+    <section id="shop">
+      <div class="container">
+        <div class="Categories">
+          <span class="active">ALL</span>
+          <span>Laptop</span>
+          <span>Gaming PCs</span>
+          <span>Gaming Accesories</span>
+          <span>Gaming Consoles</span>
+        </div>
+        <div class="shop-content">
+          <div class="box">
+            <div class="img">
+              <img src="mac-laptop-png-13.png" alt="" />
+            </div>
+            <p>
+              Lenovo IdeaPad Flex 5 14ALC05 Laptop - AMD Ryzen™ 5-5500U - 8GB -
+              512GB SSD - AMD Radeon™ Graphics - 14.0 FHD - Win11 - Graphite
+              Grey
+            </p>
+            <div class="price-content">
+              <div class="price">
+                <span>850$</span>
+                <span id="price-main">730$</span>
+              </div>
+              <a class="add-cart"><i class="bx bx-cart-add add-cart"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="mac-laptop-png-13.png" alt="" />
+            </div>
+            <p>
+              Skip to the beginning of the images gallery Lenovo Flex 5 Laptop -
+              AMD Ryzen™7-5700U - 8GB - 512GB SSD - AMD Radeon™ Graphics -
+              14"FHD - Win10 - Graphite Grey
+            </p>
+            <div class="price-content">
+              <div class="price">
+                <span>1150$</span> <span id="price-main">1099$</span>
+              </div>
+              <a class="add-cart"><i class="bx bx-cart-add add-cart"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="mac-laptop-png-13.png" alt="" />
+            </div>
+            <p>
+              ASUS Vivobook S 14 Flip TN3402QA-LZ005W Laptop - AMD Ryzen™
+              R5-5600H - 8GB - 512GB SSD - AMD Radeon™ Graphics - 14.0 '' WUXGA
+              - Win11 - Quiet Blue
+            </p>
+            <div class="price-content">
+              <div class="price">
+                <span>950$</span> <span id="price-main">810$</span>
+              </div>
+              <a class="add-cart"><i class="bx bx-cart-add add-cart"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="mac-laptop-png-13.png" alt="" />
+            </div>
+            <p>
+              Dell G15-5515 Laptop - AMD Ryzen™ 7-5800H - 8GB - 512GB SSD -
+              NVIDIA® GeForce RTX™ 3050 4GB - 15,6" FHD - Win11 - Phantom Grey
+            </p>
+            <div class="price-content">
+              <div class="price">
+                <span>550$</span> <span id="price-main">499$</span>
+              </div>
+              <a class="add-cart"><i class="bx bx-cart-add add-cart"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="mac-laptop-png-13.png" alt="" />
+            </div>
+            <p>
+              HP Victus 15-fa0088ne Laptop - Intel® Core™ i5-12500H - 8GB - 1TB
+              SSD - NVIDIA® GeForce® GTX 1650 4GB - 15.6" FHD - Win11 - Mica
+              Silver
+            </p>
+            <div class="price-content">
+              <div class="price">
+                <span>1250$</span> <span id="price-main">1130$</span>
+              </div>
+              <a class="add-cart"><i class="bx bx-cart-add add-cart"></i></a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="mac-laptop-png-13.png" alt="" />
+            </div>
+            <p>
+              Lenovo ThinkPad E14 Laptop - Intel® Core™ i7-1255U - 8GB - 512GB
+              SSD - NVIDIA® GeForce MX550 2GB - 14" FHD - Black
+            </p>
+            <div class="price-content">
+              <div class="price">
+                <span class="dill">1230$</span>
+                <span id="price-main">1200$</span>
+              </div>
+              <a class="add-cart"><i class="bx bx-cart-add add-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="btn-view">
+          <button>View More</button>
+        </div>
+      </div>
+    </section>
+    <!----------------------- Contact Us ------------------------->
+    <section id="contact">
+      <div class="container">
+        <div class="content">
+          <div class="left-contnet">
+            <img
+              src="Screenshot_2024-03-03_114412-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="right-contnet">
+            <form method="POST" id="form">
+              <h1>Get in touch</h1>
+              <input
+                type="hidden"
+                name="access_key"
+                value="5d15a52c-c886-4798-a066-1eee111798e7"
+              />
+              <div class="input-content">
+                <i class="bx bx-user"></i>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="input-content">
+                <i class="bx bx-envelope"></i>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="input-content">
+                <i class="bx bx-message-alt-detail"></i>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <input id="btn-contact" type="submit" value="Send" />
+              <div id="result"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------ Footer ------------------>
+    <footer>
+      <div class="container">
+        <p >Made By <a href="https://ahmed3mran.github.io/Portfolio/" target="_blank">3mran</a> : )</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="signup.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
